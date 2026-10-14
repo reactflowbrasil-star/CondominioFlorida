@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  body { @apply bg-gray-50 text-gray-900 antialiased; }
+  .scrollbar-thin::-webkit-scrollbar { @apply w-2; }
+  .scrollbar-thin::-webkit-scrollbar-track { @apply bg-gray-100; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { @apply bg-gray-300 rounded; }
+}
+
+@layer components {
+  .btn-primary { @apply px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200 disabled:opacity-50; }
+  .btn-secondary { @apply px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg font-medium transition-colors duration-200; }
+  .card { @apply bg-white rounded-xl shadow-md p-6; }
+  .input-field { @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent; }
+  .status-badge { @apply px-2 py-1 rounded-full text-xs font-medium; }
+  .status-pending { @apply bg-yellow-100 text-yellow-800; }
+  .status-approved { @apply bg-green-100 text-green-800; }
+  .status-rejected { @apply bg-red-100 text-red-800; }
+  .status-cancelled { @apply bg-gray-100 text-gray-600; }
+}

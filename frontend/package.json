@@ -1,0 +1,37 @@
+{
+  "name": "condominio-florida-frontend",
+  "version": "1.0.0",
+  "description": "Frontend PWA for Condomínio Flórida Condo Management",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.104.2",
+    "axios": "^1.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.23",
+    "@vitejs/plugin-react": "^4.2.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.13",
+    "vite-plugin-pwa": "^0.19.7"
+  }
+}
