@@ -3,6 +3,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import LoginLayout from '@/components/layouts/LoginLayout';
 import MainLayout from '@/components/layouts/MainLayout';
 import LoginPage from '@/pages/LoginPage';
+import LandingPage from '@/pages/LandingPage';
 import DashboardPage from '@/pages/DashboardPage';
 import AreasPage from '@/pages/AreasPage';
 import MyBookingsPage from '@/pages/MyBookingsPage';
@@ -33,6 +34,7 @@ const RequireAdmin = () => {
 export default function AppRoutes() {
   return (
     <Routes>
+      <Route path="/landing" element={<LandingPage />} />
       <Route path="/login" element={<LoginLayout />}>
         <Route index element={<LoginPage />} />
       </Route>
